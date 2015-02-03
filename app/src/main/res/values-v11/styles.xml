@@ -1,0 +1,19 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="baseThemeNoActionBar" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    
+    <style name="baseThemeWithActionBar" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+    
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#04aeda</item>
+    </style>
+
+</resources>

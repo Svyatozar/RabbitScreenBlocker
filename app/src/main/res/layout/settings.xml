@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        
+        <Button
+	        android:id="@+id/button3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Изменить пароль" 
+	        android:layout_weight="1"
+	        android:onClick="onClick"/>
+        <Button
+	        android:id="@+id/button2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Рабочий стол" 
+	        android:layout_weight="1"
+	        android:onClick="onClick_table"/>
+        <Button
+	        android:id="@+id/button4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Выход" 
+	        android:layout_weight="1"
+	        android:onClick="onClick_exit"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        
+        <Button
+	        android:id="@+id/button5"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Cкрыть System Bar" 
+	        android:layout_weight="1"
+	        android:onClick="onHide"/>
+        <Button
+	        android:id="@+id/button6"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Показать System bar" 
+	        android:layout_weight="1"
+	        android:onClick="onUnhide"/>
+        
+    </LinearLayout>
+    
+    <ListView 
+		android:id="@+id/admin_list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:drawSelectorOnTop="false"/>
+
+</LinearLayout>

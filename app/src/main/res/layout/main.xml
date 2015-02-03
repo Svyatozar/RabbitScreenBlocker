@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:src="@drawable/background_logo"
+    	android:scaleType="fitXY"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+	    <ListView 
+			android:id="@+id/list"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+	        android:layout_weight="1"
+			android:drawSelectorOnTop="false"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+	    
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Время"
+        android:textSize="8pt" 
+        android:layout_marginRight="5dp"/>
+	    
+    <ImageView 
+        android:id="@+id/signal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/signal_high"
+        android:layout_gravity="center"/>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="5dp">
+	    <ImageView 
+	        android:id="@+id/battery"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:src="@drawable/stat_sys_battery_100"/>
+	    <ImageView 
+	        android:id="@+id/charging"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:src="@drawable/stat_sys_battery_charge"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="17%"
+        android:textSize="8pt" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RabbitScreenBlocker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Строки - команды для kiosk mode -->
+    <string name="SU">su</string>
+    <string name="C">-c</string>
+
+    <string name="HONEYCOMB_AND_OLDER_PROCESS_ID">79</string>
+    <string name="ICS_AND_NEWER_PROCESS_ID">42</string>
+
+    <string name="PM_DISABLE">pm disable&#160;</string>
+    <string name="PM_ENABLE">pm enable&#160;</string>
+    <string name="UNLOAD_PROCESS">service call activity %1$s s16 %2$s</string>
+
+    <string name="LAUNCHER">com.sec.android.app.launcher</string>
+    <string name="SVOICE">com.vlingo.midas</string>
+    <string name="SYSTEMUI">com.android.systemui</string>
+    <string name="SETTINGS">com.android.settings</string>
+    <string name="KEYBOARD_SETTINGS">com.google.android.inputmethod.latin</string>
+
+</resources>

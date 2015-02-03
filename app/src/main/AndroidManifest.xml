@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.monochrome.home_screen"
+    android:versionCode="19"
+    android:versionName="19.0" >
+    
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+    
+    <uses-permission android:name="hidebar.permission.CONTROL_SYSTEMBAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/baseThemeNoActionBar" >
+        <activity
+            android:name="ru.monochrome.research.rabbitscreenblocker.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ru.monochrome.research.rabbitscreenblocker.activities.SettingsActivity"
+            android:label="Панель администратора"
+            android:theme="@style/baseThemeWithActionBar"></activity>
+        <service android:name="ru.monochrome.research.rabbitscreenblocker.services.ButtonService" android:process=":special_panel"></service>
+        <activity android:name="ru.monochrome.research.rabbitscreenblocker.activities.PasswordActivity"></activity>
+        <receiver 
+            android:name="ru.monochrome.research.rabbitscreenblocker.receivers.ApkCleaner"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            
+            <intent-filter> 
+	            <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+       		</intent-filter>   
+       		
+        </receiver>
+    </application>
+
+</manifest>
