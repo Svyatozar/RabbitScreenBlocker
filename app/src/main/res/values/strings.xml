@@ -21,5 +21,6 @@
     <string name="SYSTEMUI">com.android.systemui</string>
     <string name="SETTINGS">com.android.settings</string>
     <string name="KEYBOARD_SETTINGS">com.google.android.inputmethod.latin</string>
+    <string name="blocker_in_work">RabbitScreenBlocker is working</string>
 
 </resources>
